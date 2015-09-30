@@ -1,0 +1,355 @@
+/* info
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$clrLightGrey: #dcdcdd; //rgba(220, 220, 221, 100) // lght grey
+$clrGrey: #c5c3c6; //rgba(197, 195, 198, 100) // grey
+$clrGreen: #019a79; //rgba(1, 154, 121, 100)   // green
+$clrDarkGrey: #46494c; //rgba(70, 73, 76, 100)  // dark grey
+$clrBlue: #4c5c68; //rgba(76, 92, 104, 100) // blue
+
+$blueLight: #93AADB;
+$blueReg: #3E5EA2;
+$redLight: #F89EAE;
+$redReg: #D32C49;
+$greenLight: #B3F098; 
+$greenReg: #56C228;
+$yellowLight: #FFF0A2;
+$yellowReg: #E1C42E;
+
+/* Mobile first queries */
+
+
+
+/* base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  padding-top: 150px;
+  box-sizing: border-box;
+  background: #fefefe;
+}
+
+.container {
+}
+.page-wrap {
+  position: relative;
+}
+
+.button, 
+button, 
+input, 
+input[type=text],
+input[type=submit], 
+input[type=reset], 
+input[type=button] {
+  /* reduce button padding here */
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+
+
+/* layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* page header */
+.header {
+  padding: 8px 0 0;
+  /*text-align: center;*/
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 400;
+  background-color: #fff;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+/* remove anchor underline in header */
+.header * a { text-decoration: none; }
+
+/* logo */
+.logo {
+  padding: 4px;
+  &:after {
+    content: 'Hexia';
+    font-size: 28px;
+  }
+}
+
+/* navigation */
+.nav {
+  padding-top: 8px;
+  /* add this to center content */
+  /*text-align: center;*/
+  
+  ul {
+    list-style: none;
+    margin-bottom: 10px;
+    
+    li {
+      display: inline-block;
+      
+      a {
+        padding: 12px 8px;
+        border-right: 1px inset #eee;
+        /*border-radius: 4px;*/
+        font-weight: 600;
+        /*background: #eee;*/
+        &:hover {
+          transition: all 0.2s ease-in;
+          color: inherit;
+        }
+      }
+    }
+    li:last-child a {
+      border: none;
+    }
+  }
+}
+
+#top-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#top-search a { margin-right: 8px;  }
+
+/* search box */
+.top-search_box {
+  display: inline;
+  padding: 8px 0;
+}
+
+
+
+
+/* footer */
+.footer {
+  background-color: #eee;
+  padding: 30px 0;
+}
+
+
+
+
+/* sections */
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  letter-spacing: 0.03em;
+}
+
+
+
+/* panel UI */
+.panel {
+  background-color: #eee;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+/* catalog listing */
+.catalog-list {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+}
+.catalog-item {
+  position: relative;
+  /*overflow: hidden;*/
+  /*height: 320px;*/
+  /* override panel class attrs. */
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+/* important! this will allow the fourth
+   item to collapse without breaking the grid */
+.catalog-list .catalog-item:nth-child(3n+1) {  margin-left: 0; }
+
+/* remove anchor underline text-decoration */
+.catalog-item_detail a { text-decoration: none; }
+
+.catalog-item_name {
+  font-size: 24px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.price-tag {  padding: 10px 0; }
+
+.old-price {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 21px;
+  color: red;
+}
+
+
+/* stats UI */
+
+ul.stats,
+.stats {
+  list-style: none;
+  margin: 0 0 15px 0;
+  text-align: center;
+  li {
+    /* float: left; */
+    display: inline-block;
+    /* text-align: center; */
+    box-sizing: border-box;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    border-right: 1px solid #d7d7d7;
+    
+    
+    a {
+      display: block;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    span {
+      display: block;
+      font-weight: normal;
+      font-size: 15px;
+    }
+  }
+  
+  li:last-child {
+    border: none;
+  }
+}
+
+
+/* Shopping Cart */
+
+.cart-item_info {
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    float: left;
+    box-sizing: border-box;
+  }
+  
+  .cart-item_details {
+    display: inline-block;
+    margin-left: 10px;
+    h3 {
+      font-size: 24px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+
+.cart-total {
+  background-color: #eee;
+  color: #777;
+}
+
+
+/* vendors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* utitlies
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.alert {
+  border: 1px solid #d7d7d7;
+  /*width: 100%;*/
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: inherit;
+  margin-bottom: 15px;
+  font-weight: 600;
+  &-success {
+    background-color: $greenLight;
+    border-color: $greenReg;
+  }
+  &-info {
+    background-color: $blueLight;
+    border-color: $blueReg;
+  }
+  &-warning {
+    background-color: $yellowLight;
+    border-color: $yellowReg;
+  }
+  &-error {
+    background-color: $redLight;
+    border-color: $redReg;
+  }
+}
+
+.text {
+  &-success {
+    color: $greenReg;
+  }
+  &-info {
+    color: $blueReg;
+  }
+  &-warning {
+    color: $yellowReg;
+  }
+  &-error {
+    color: $redReg;
+  }
+}
+
+/* text alignment */
+
+.text-center {  text-align: center; }
+.text-left {    text-align: left;   }
+.text-right {   text-align: right;  }
+
+
+.text-muted {
+  color: #777;
+}
+
+/* responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

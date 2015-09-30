@@ -1,0 +1,154 @@
+
+demo data base design ideas based off of Cratejoy
+
+===
+
+
+/ this part will appear in the admin panel for a `subscription` product, 
+  see below for one-time buy products.
+/
+
+## subscription product
+
+  basic information
+  - item title
+  - description
+
+  [*] add visibility [BOOL]
+
+  billing schedule
+  - frequency
+    every week
+    every month
+  -re-bill date
+    1st of the month
+    middle fo the mo.
+    last of the mo.
+    specific data.
+
+  [*] upload images
+    - basic upload from local computer file.. add to???
+
+  [*] inventory
+    - track inventory
+
+  [*] Tags
+  [*] Category
+  [*] Subcategory
+
+
+  pricing and variants
+  - term prices
+    month 2 month
+    3 month prepay
+    6 month prepay
+    12 month prepay
+
+  - variants
+  [skip] basically customizes version of pricing (above)
+
+  shipping ptions
+  - weight: 000 ibs 000 ozs
+  - shipping 
+    - automatic
+    - free
+    - flat rate ($00.00 - price - )
+
+
+UI: SAVE || DELETE
+
+
+
+/ this is db design for one-time buy products
+/
+
+## One Time Buy
+
+  basic information
+  - item title
+  - description
+
+  billing schedule
+  - frequency
+    every week
+    every month
+  -re-bill date
+    1st of the month
+    middle fo the mo.
+    last of the mo.
+    specific data.
+
+  pricing and variants
+  - term prices
+    month 2 month
+    3 month prepay
+    6 month prepay
+    12 month prepay
+
+  - variants
+  [skip] basically customizes version of pricing (above)
+
+  shipping ptions
+  - weight: 000 ibs 000 ozs
+  - shipping 
+    - automatic
+    - free
+    - flat rate ($00.00 - price - )
+
+
+
+
+
+
+########################
+
+TOTAL Backend Sections
+
+  this is based off cratejoy backend
+
+########################
+
+
+
+- analytics
+- products (see above)
+- subscriptions
+  time based, durations
+- orders
+  - order history, co
+
+[*check web shots for find the rest!!*]
+
+
+
+
+
+
+IDEAS:
+
+- html5 boilserplate merge
+- admin
+- admin awesome backend
+- actual PHP Mysql security
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## eod

@@ -1,0 +1,5 @@
+$connection = mysql_connect(
+  'sulley.cah.ucf.edu', 
+  'ty271781', 
+  '732FDD2702D5412B822FE5FCD1217A66'
+);

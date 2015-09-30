@@ -1,0 +1,1 @@
+INSERT INTO `hexia_db_2`.`admin` (`adminId`, `adminName`, `adminPass`, `adminDescription`, `adminSecurityAnswer`) VALUES ('1', 'demoAdmin', 'demoAdmin', 'few admin go to the depths as this admin does, and return alive to see another day.', 'mr snuggles');
